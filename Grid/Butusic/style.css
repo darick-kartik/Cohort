@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh; /* height: 100% aur overflow: hidden hataya taaki layout kate nahi */
+    overflow-x: hidden; 
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MAIN */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 16px;
+}
+
+/* LEFT */
+.left {
+    display: grid;
+    grid-template-columns: 1.55fr 0.85fr;
+    grid-template-rows: 44% 56%;
+    gap: 16px;
+}
+
+/* LEFT TOP LEFT */
+.lefttopleft {
+    background: linear-gradient(135deg, #ff8a00, #ffb347);
+    border-radius: 28px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.lefttopleft img {
+    width: 88%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* LEFT TOP RIGHT */
+.lefttopright {
+    background: #0d0d0d;
+    border-radius: 28px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lefttopright img {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+}
+
+/* LEFT BOTTOM LEFT */
+.leftbottomleft {
+    background: #0f0f0f;
+    border: 2px solid #d9ff00;
+    border-radius: 28px;
+    padding: 26px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.leftbottomleft h1 {
+    font-size: clamp(2.5rem, 4.5vw, 4.5rem);
+    line-height: .9;
+    font-weight: 900;
+}
+
+.purpletext {
+    margin-top: 12px;
+}
+
+.purpletext p {
+    color: #944dff;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #333;
+}
+
+.bitcoin {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: #d9ff00;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.bitcoin span {
+    color: #ccc;
+    line-height: 1.4;
+    font-size: 13px;
+}
+
+.barcode {
+    width: 100%;
+    height: 58px;
+    background: repeating-linear-gradient(
+        to right,
+        white 0px,
+        white 4px,
+        transparent 4px,
+        transparent 8px
+    );
+}
+
+/* LEFT BOTTOM RIGHT */
+.leftbottomright {
+    display: grid;
+    grid-template-rows: 1.1fr .8fr .7fr;
+    gap: 16px;
+}
+
+/* BOX 1 */
+.box1 {
+    background: #111;
+    border-radius: 24px;
+    padding: 18px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.locationicon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #d9ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location span {
+    color: #888;
+    font-size: 11px;
+}
+
+.content h2 {
+    font-size: clamp(1rem, 1.3vw, 1.4rem);
+    line-height: 1.2;
+}
+
+.content p {
+    margin-top: 8px;
+    color: #666;
+    font-size: 11px;
+}
+
+/* BOX 2 */
+.box2 {
+    background: linear-gradient(135deg, #6c2fff, #a855ff);
+    border-radius: 24px;
+    padding: 18px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.box2 h3 {
+    font-size: clamp(1.2rem, 1.8vw, 2rem);
+}
+
+.box2 p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.box2 button {
+    padding: 10px;
+    border: none;
+    border-radius: 14px;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* BOX 3 */
+.box3 {
+    background: white;
+    border-radius: 24px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box3 h4 {
+    font-size: 16px;
+}
+
+.fakeqr {
+    width: 100%;
+    height: 60px;
+    background: repeating-linear-gradient(
+        90deg,
+        black 0px,
+        black 6px,
+        white 6px,
+        white 12px
+    );
+}
+
+/* RIGHT */
+.right {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    grid-template-rows: 56% 44%;
+    gap: 16px;
+}
+
+/* RIGHT TOP LEFT */
+.righttopleft {
+    background: #0f0f0f;
+    border-radius: 28px;
+    padding: 22px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menuicon {
+    font-size: 38px;
+}
+
+.menucontent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: #888;
+    font-size: 15px;
+}
+
+/* RIGHT TOP RIGHT */
+.righttopright {
+    display: grid;
+    grid-template-rows: .8fr 1.2fr;
+    gap: 16px;
+}
+
+/* BOX 4 */
+.box4 {
+    background: #f1f1f1;
+    border-radius: 24px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box4 h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1;
+}
+
+.box4 p {
+    font-size: 14px;
+}
+
+/* BOX 5 */
+.box5 {
+    background: #dcdcdc;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.box5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* RIGHT BOTTOM (REVIEW SECTION) */
+.rightbottom {
+    background: white;
+    border-radius: 28px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.reviewtop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Stars ko text ke sath center align karne ke liye */
+    width: 100%;
+    gap: 10px;
+}
+
+.reviewtop h1 {
+    font-size: clamp(1.4rem, 2.2vw, 2.2rem); /* Size chota kiya taaki horizontal space mile */
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.stars {
+    color: gold;
+    font-size: 20px;
+    flex-shrink: 0; /* Yeh line stars ko niche wrap hone se hamesha rokegi */
+}
+
+.reviewtext {
+    font-size: .9rem;
+    line-height: 1.6;
+    color: #444;
+    width: 95%;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileleft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profilecircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.profile button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 12px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/* RESPONSIVE MEDIA QUERY (For Mobile & Tablets) */
+@media (max-width: 1024px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+    .left, .right {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .leftbottomright, .righttopright {
+        grid-template-rows: auto;
+    }
+}
