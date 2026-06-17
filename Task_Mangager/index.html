@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ 
+
+    <header>
+
+        <div class="header-content">
+
+            <h1>Task Manager</h1>
+
+            <p>
+                Manage your daily tasks efficiently.
+            </p>
+
+        </div>
+
+        <button id="theme-btn">
+            🌙 Toggle Theme
+        </button>
+
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ================= ADD TASK ================= -->
+
+        <section class="card">
+
+            <h2>Add New Task</h2>
+
+            <form id="task-form">
+
+                <label for="task-input">
+                    Task Title
+                </label>
+
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="Enter task..."
+                    required
+                >
+
+                <label for="category">
+
+                    Category
+
+                </label>
+
+                <select id="category">
+
+                    <option value="Work">Work</option>
+
+                    <option value="Study">Study</option>
+
+                    <option value="Personal">Personal</option>
+
+                    <option value="Health">Health</option>
+
+                    <option value="Other">Other</option>
+
+                </select>
+
+                <button id="add-task">
+
+                    Add Task
+
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- ================= TASK LIST ================= -->
+
+        <section class="card">
+
+            <h2>Your Tasks</h2>
+
+            <div id="task-list">
+
+                <!-- JS will create task cards here -->
+
+            </div>
+
+        </section>
+
+        <!-- ================= BROWSER PIPELINE ================= -->
+
+        <section class="card">
+
+            <h2>Browser Rendering Pipeline</h2>
+
+            <div class="pipeline">
+
+                <div class="step">HTML</div>
+
+                <span>⬇</span>
+
+                <div class="step">Parsing</div>
+
+                <span>⬇</span>
+
+                <div class="step">Tokenization</div>
+
+                <span>⬇</span>
+
+                <div class="step">DOM Tree</div>
+
+                <span>+</span>
+
+                <div class="step">CSSOM Tree</div>
+
+                <span>⬇</span>
+
+                <div class="step">Render Tree</div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= EVENT DEMO ================= -->
+
+        <section class="card">
+
+            <h2>Event Bubbling & Capturing</h2>
+
+            <div id="grandparent">
+
+                Grandparent
+
+                <div id="parent">
+
+                    Parent
+
+                    <div id="child">
+
+                        Child
+
+                        <button id="demo-btn">
+
+                            Click Me
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
