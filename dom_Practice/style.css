@@ -1,0 +1,7 @@
+.hidden{
+    visibility: hidden;
+}
+.design{
+    text-decoration: line-through;
+    color: gray;
+}
